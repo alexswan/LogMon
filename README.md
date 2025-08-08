@@ -1,7 +1,7 @@
-#LogMon Monitoring Application
+# LogMon Monitoring Application
 
 
-#It is a c++ application that reads a log file, analizes the job duration and generates a log based on two threshold intervals.
+It is a c++ application that reads a log file, analizes the job duration and generates a log based on two threshold intervals.
 
 # What it does?
 - it read a file called logs.log that has a structure like this:
@@ -18,7 +18,7 @@ HH:MM:SS, task name, TAG<START/END>, PID
 - at the end, it reports the jobs that are unpaired (missing one of the tags)
 
 
-#Setup
+# Setup
 -Clone the repo:
 git clone https://github.com/alexswan/LogMon.git
 
