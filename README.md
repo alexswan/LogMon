@@ -39,7 +39,7 @@ https://github.com/alexswan/LogMon/blob/main/src/logreporter.log
 ![alt screenshot](https://github.com/alexswan/LogMon/blob/main/img/Screenshot%202025-08-09%20at%2001.15.11.png)
 
 
-#To run the tests:
+# To run the tests:
 - you need to have gtest installed:
 
 brew install googletest 
@@ -51,7 +51,22 @@ brew install googletest
 ![alt screenshot](https://github.com/alexswan/LogMon/blob/main/img/test_logEntry.png)
 
 
+# Design Decisions:
 
+- for the sake of simplicity the log file is read in chunks of lines. Now i read 10 lines, process them, read another 10 lines and so on. i did not implement the Producer/Consumer patten because of the lack of time
+
+- The LogEntry is implemented as a Factory pattern. Also it tries to be as robust as can be. I presume the log pattern does not change (much). The only variabile is how long the line can be, so there might be some more tests to be added.
+
+- The tests written are demonstrative. They do not catch all the errors I can imagine, buy I tried to catch as many as I could for the timeframe.
+
+- The LineProcess is a Pipe and filter pattern. it gets the input from the LogReader and output it to LogReporter
+
+- there is no spead measurement, i might miss some improvements.
+
+
+thank you!
+
+Razvan
 
 
 
