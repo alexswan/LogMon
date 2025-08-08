@@ -39,6 +39,21 @@ https://github.com/alexswan/LogMon/blob/main/src/logreporter.log
 ![alt screenshot](https://github.com/alexswan/LogMon/blob/main/img/Screenshot%202025-08-09%20at%2001.15.11.png)
 
 
+#To run the tests:
+- you need to have gtest installed:
+
+brew install googletest 
+- copy the install path in tasks.json as you can see here:
+                "-I/opt/homebrew/opt/googletest/include", // Include path for Google Test
+                "-L/opt/homebrew/opt/googletest/lib",     // Library path for Google Test
+
+- here is how the output of the test for LogEntry!
+![alt screenshot](https://github.com/alexswan/LogMon/blob/main/img/test_logEntry.png)
+
+
+
+
+
 
 
 

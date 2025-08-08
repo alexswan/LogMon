@@ -13,7 +13,7 @@ int main()
    std::cout << "==========================\n=  Starting Log Parser!\n==========================" << std::endl;
     try
     {
-        LogReader   reader("./Logmon/src/logs.log");
+        LogReader   reader("./LogMon/src/logs.log");
   
         LogReporter    log("./LogMon/src/logreporter.log", LogReporter::Level::Warning);
 

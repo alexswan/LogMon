@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/razvan/Documente/work/2025/LogMon/LOGMON/out/LogMon'
+binary-path:     '/Users/razvan/Documente/work/2025/LogMon/LogMon/out/LogMon'
 relocations:     []
 ...
