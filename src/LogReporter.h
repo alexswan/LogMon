@@ -21,7 +21,7 @@ public:
                 Level initial_level = Level::Error,
                 std::size_t max_buffer_lines = 500)
 
-        : outfile_(logfilename,std::ofstream::out |std::ios::app),
+    : outfile_(logfilename, std::ios::out | std::ios::trunc),
           level_(initial_level),
           max_buffer_lines_(max_buffer_lines),
           buffer_()

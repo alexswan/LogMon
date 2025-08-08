@@ -16,7 +16,7 @@ int main()
      LogEntry entry = LogEntry::from_string(input);
 
 
-     LogReporter reporter("log.txt");
+     LogReporter reporter("LOGMON/out/log.txt");
      reporter.write(LogReporter::Level::Warning, "This is a warning message");
      reporter.write(LogReporter::Level::Error, "This is an error message");
      reporter.flush();
