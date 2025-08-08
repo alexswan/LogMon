@@ -28,8 +28,15 @@ git clone https://github.com/alexswan/LogMon.git
 - run the app from the out folder:
     ./LogMon
 
+- the file it parses is located here:
+https://github.com/alexswan/LogMon/blob/main/src/logs.log
+
+
 - the file generated is logreporter.log as you can see here:
 https://github.com/alexswan/LogMon/blob/main/src/logreporter.log
+
+
+
 
 
 
