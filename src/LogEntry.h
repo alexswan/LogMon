@@ -1,8 +1,6 @@
 #pragma once
 
 #include <string>
-#include <ctime>
-#include <chrono>
 #include <iostream>
 
 enum class LogType: std::uint8_t {

@@ -3,6 +3,7 @@
 using namespace std;
 
 #include "LogEntry.h"
+#include "LogReporter.h"
 
 
 
@@ -12,7 +13,13 @@ int main()
 
      std::string input = "12:34:56,example,START,1234";
 
-    // LogEntry entry = LogEntry::from_string(input);
+     LogEntry entry = LogEntry::from_string(input);
 
-    
+
+     LogReporter reporter("log.txt");
+     reporter.write(LogReporter::Level::Warning, "This is a warning message");
+     reporter.write(LogReporter::Level::Error, "This is an error message");
+     reporter.flush();
+
+    return 0;
 }
