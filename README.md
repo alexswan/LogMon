@@ -1,7 +1,7 @@
 # LogMon Monitoring Application
 
 
-It is a c++ application that reads a log file, analizes the job duration and generates a log based on two threshold intervals.
+It is a c++ application that reads a log file, analyzes the job duration and generates a log based on two threshold intervals.
 
 # What it does?
 - it read a file called logs.log that has a structure like this:
@@ -55,13 +55,13 @@ brew install googletest
 
 - for the sake of simplicity the log file is read in chunks of lines. Now i read 10 lines, process them, read another 10 lines and so on. i did not implement the Producer/Consumer patten because of the lack of time
 
-- The LogEntry is implemented as a Factory pattern. Also it tries to be as robust as can be. I presume the log pattern does not change (much). The only variabile is how long the line can be, so there might be some more tests to be added.
+- The LogEntry is implemented as a Factory pattern. Also it tries to be as robust as can be. I presume the log pattern does not change (much). The only variable is how long the line can be, so there might be some more tests to be added.
 
 - The tests written are demonstrative. They do not catch all the errors I can imagine, buy I tried to catch as many as I could for the timeframe.
 
 - The LineProcess is a Pipe and filter pattern. it gets the input from the LogReader and output it to LogReporter
 
-- there is no spead measurement, i might miss some improvements.
+- there is no speed measurement, iI might miss some improvements.
 
 
 thank you!
