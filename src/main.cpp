@@ -3,23 +3,32 @@
 using namespace std;
 
 #include "LogEntry.h"
+#include "LogReader.h"
 #include "LogReporter.h"
-
+#include "LineProcess.h"
 
 
 int main()
 {
-    cout << "hello" << endl;
+   std::cout << "==========================\n=  Starting Log Parser!\n==========================" << std::endl;
+    try
+    {
+        LogReader   reader("./Logmon/src/logs.log");
+  
+        LogReporter    log("./LogMon/src/logreporter.log", LogReporter::Level::Warning);
 
-     std::string input = "12:34:56,example,START,1234";
+        LineProcessor processor(reader, log);
 
-     LogEntry entry = LogEntry::from_string(input);
-
-
-     LogReporter reporter("LOGMON/out/log.txt");
-     reporter.write(LogReporter::Level::Warning, "This is a warning message");
-     reporter.write(LogReporter::Level::Error, "This is an error message");
-     reporter.flush();
-
+   
+        processor.process_lines();
+    } 
+    catch (const std::exception& e) 
+    {
+        std::cerr << "Error processing log lines: " << e.what() << std::endl;
+        return 1; // Return a non-zero exit code on error
+    }
+   
+    std::cout << "==========================\n=  Log processing completed successfully.\n==========================" << std::endl;
+  
     return 0;
 }
