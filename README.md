@@ -35,6 +35,9 @@ https://github.com/alexswan/LogMon/blob/main/src/logs.log
 - the file generated is logreporter.log as you can see here:
 https://github.com/alexswan/LogMon/blob/main/src/logreporter.log
 
+- here is how the output looks like!
+![alt screenshot](https://github.com/alexswan/LogMon/blob/main/img/Screenshot%202025-08-09%20at%2001.15.11.png)
+
 
 
 
