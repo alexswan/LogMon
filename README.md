@@ -47,6 +47,10 @@ brew install googletest
                 "-I/opt/homebrew/opt/googletest/include", // Include path for Google Test
                 "-L/opt/homebrew/opt/googletest/lib",     // Library path for Google Test
 
+- you also could use the vscode extention C++ TestMate by MatePek to see the tests as here:
+![alt screenshot](https://github.com/alexswan/LogMon/blob/main/img/Testextention)
+
+
 - here is how the output of the test for LogEntry!
 ![alt screenshot](https://github.com/alexswan/LogMon/blob/main/img/test_logEntry.png)
 

@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/razvan/Documente/work/2025/LogMon/LogMon/out/test_LogReporter'
+relocations:     []
+...
